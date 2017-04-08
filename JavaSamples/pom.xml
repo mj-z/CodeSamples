@@ -16,7 +16,9 @@
 	<modules>
 		<module>common</module>
 		<module>problem99</module>
-    <module>multithread</module>
+		<module>multithread</module>
+		<module>misctest</module>
+    <module>java8</module>
   </modules>
 
 	<dependencies>
