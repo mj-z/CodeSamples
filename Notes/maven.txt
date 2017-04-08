@@ -1,0 +1,9 @@
+mvn eclipse:eclipse -DdownloadSources -DdownloadJavadocs
+
+mvn archetype:generate -DgroupId=cn.luxh.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -DgroupId=cn.luxh.app -DartifactId=my-web-app -DarchetypeArtifactId=maven-archetype-webapp -DinteractivMode=false
+
+cd D:\workspaces\eclipse_neon
+mvn archetype:generate -DgroupId=com.mjz -DartifactId=CodeBase -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+

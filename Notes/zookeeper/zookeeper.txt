@@ -1,0 +1,7 @@
+cd D:\zookeeper-3.4.9\bin
+D:\zookeeper-3.4.9\bin\zkCli -server localhost:2181
+
+D:\zookeeper-3.4.9\bin\zkCli -server localhost:2182
+
+D:\zookeeper-3.4.9\bin\zkCli -server localhost:2183
+
