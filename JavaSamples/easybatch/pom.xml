@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>mjz</groupId>
+		<artifactId>javasamples</artifactId>
+		<version>${project.version}</version>
+	</parent>
+	<artifactId>easybatch</artifactId>
+	<name>easybatch</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<exec-maven-plugin-version>1.4.0</exec-maven-plugin-version>
+		<hsqldb.version>2.3.4</hsqldb.version>
+		<spring.version>4.3.3.RELEASE</spring.version>
+		<hibernate-core.version>4.3.11.Final</hibernate-core.version>
+		<javax.json.version>1.0.4</javax.json.version>
+		<gson.version>2.4</gson.version>
+		<activemq-core.version>5.7.0</activemq-core.version>
+		<elasticsearch.version>1.7.3</elasticsearch.version>
+		<commons-io.version>2.4</commons-io.version>
+		<mongodb-driver.version>3.1.0</mongodb-driver.version>
+		<maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
+		<easybatch.version>5.0.0</easybatch.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.easybatch</groupId>
+			<artifactId>easybatch-core</artifactId>
+			<version>${easybatch.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.easybatch</groupId>
+			<artifactId>easybatch-flatfile</artifactId>
+			<version>${easybatch.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>

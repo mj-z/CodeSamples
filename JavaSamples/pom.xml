@@ -19,6 +19,7 @@
 		<module>multithread</module>
 		<module>misctest</module>
     <module>java8</module>
+    <module>easybatch</module>
   </modules>
 
 	<dependencies>
