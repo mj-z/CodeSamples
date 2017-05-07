@@ -25,6 +25,7 @@
 		<module>guavatest</module>
     <module>aop</module>
     <module>annatation</module>
+    <module>spring-boot-web-helloworld</module>
   </modules>
 
 	<dependencies>
