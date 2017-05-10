@@ -27,6 +27,7 @@
     <module>annatation</module>
     <module>spring-boot-web-helloworld</module>
     <module>fatjar</module>
+    <module>objectpool</module>
   </modules>
 
 	<dependencies>

@@ -3,6 +3,9 @@ http://localhost:8080/
 
 mvn package
 
+spring fatjar howto
+https://docs.spring.io/spring-boot/docs/current/reference/html/howto-build.html
+http://www.baeldung.com/deployable-fat-jar-spring-boot
 http://maven.apache.org/plugins/maven-shade-plugin/usage.html
 
 java -jar ...jar
