@@ -26,6 +26,7 @@
     <module>aop</module>
     <module>annatation</module>
     <module>spring-boot-web-helloworld</module>
+    <module>fatjar</module>
   </modules>
 
 	<dependencies>

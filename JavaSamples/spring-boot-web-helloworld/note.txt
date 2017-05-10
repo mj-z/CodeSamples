@@ -1,5 +1,21 @@
+
+http://localhost:8080/
+
 mvn package
 
 http://maven.apache.org/plugins/maven-shade-plugin/usage.html
 
 java -jar ...jar
+
+<plugin>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-maven-plugin</artifactId>
+	<version>1.5.2.RELEASE</version>
+	<executions>
+		<execution>
+			<goals>
+				<goal>repackage</goal>
+			</goals>
+		</execution>
+	</executions>
+</plugin>

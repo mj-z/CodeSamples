@@ -6,8 +6,8 @@
     <version>${project.version}</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>spring-boot-web-helloworld</artifactId>
-  <name>spring-boot-web-helloworld</name>
+  <artifactId>fatjar</artifactId>
+  <name>fatjar</name>
   <url>http://maven.apache.org</url>
   <build>
     <plugins>
@@ -23,7 +23,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>mjz.javasamples.springboot.web.App</mainClass>
+                  <mainClass>mjz.javasamples.fatjar.App</mainClass>
                 </transformer>
               </transformers>
             </configuration>
@@ -32,15 +32,6 @@
       </plugin>
     </plugins>
   </build>
-  <dependencies>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-parent</artifactId>
-      <version>1.5.2.RELEASE</version>
-      <type>pom</type>
-      <scope>import</scope>
-    </dependency>
-  </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

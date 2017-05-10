@@ -1,0 +1,5 @@
+mvn package
+
+http://maven.apache.org/plugins/maven-shade-plugin/usage.html
+
+java -jar fatjar-0.0.1-SNAPSHOT.jar
