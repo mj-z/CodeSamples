@@ -28,6 +28,8 @@
     <module>spring-boot-web-helloworld</module>
     <module>fatjar</module>
     <module>objectpool</module>
+    <module>refactorpattern</module>
+    <module>cameltest</module>
   </modules>
 
 	<dependencies>

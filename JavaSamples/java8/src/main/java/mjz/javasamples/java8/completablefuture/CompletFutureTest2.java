@@ -16,18 +16,35 @@ public class CompletFutureTest2 {
 	static int getMoreData() {
 		System.out.println("begin to start compute");
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			throw new RuntimeException(e);
 		}
 		System.out.println("end to start compute. passed " + (System.currentTimeMillis() - t) / 1000 + " seconds");
 		return rand.nextInt(1000);
+		//throw new RuntimeException("intend to throw ex!");
 	}
 
 	public static void main(String[] args) throws Exception {
-		t5();
+		t0();
 	}
-
+	
+	private static void t0() throws Exception {
+		CompletableFuture.runAsync(new Runnable() {			
+			@Override
+			public void run() {
+				throw new RuntimeException("intend to throw ex!");
+			}
+		}).whenComplete((v,e) -> {
+			if(e != null) {
+				System.out.println("------");
+				System.out.println(e);
+			}
+		});		
+		
+		Thread.sleep(5000);
+	}
+	
 	private static void t1() throws InterruptedException, ExecutionException, IOException {
 		CompletableFuture<Integer> future = CompletableFuture.supplyAsync(CompletFutureTest2::getMoreData);
 		Future<Integer> f = future.whenComplete((v, e) -> {
